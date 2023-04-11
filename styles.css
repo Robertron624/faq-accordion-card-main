@@ -66,10 +66,6 @@ section.card {
     margin-bottom: 6rem;
 }
 
-.hero-container .hero-desktop {
-    display: none;
-}
-
 .hero-container .hero-mobile {
     display: flex;
     justify-content: center;
@@ -143,27 +139,28 @@ section.card {
     font-weight: 700;
 }
 
+/* make arrow point up when accordion is open */
 .accordion input:checked + label::after {
     transform: rotate(180deg);
 }
 
-.hero-desktop {
+.hero-container .hero-desktop {
     position: relative;
+    display: none;
 }
 
-.hero-desktop img:nth-child(1){
+.hero-desktop img{
     position: absolute;
     width: 350px;
-}
-
-.hero-desktop img:nth-child(2){
-    position: absolute;
-    width: 350px;
-}
-
-.hero-desktop img {
     left: -12%;
 }
+
+.hero-desktop img:nth-child(3) {
+    width: 100px;
+    left: -18%;
+    top: 45%;
+}
+
 
 @media screen and (min-width: 768px) {
     section.card {
@@ -178,6 +175,7 @@ section.card {
 
     .hero-container{
         margin-bottom: 0;
+        height: 100%;
     }
 
     .hero-container .hero-mobile {
@@ -189,6 +187,10 @@ section.card {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+    .accordion input:not(:checked) + label:hover {
+        color: var(--soft-red);
     }
 
 }
