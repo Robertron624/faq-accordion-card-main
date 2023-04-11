@@ -51,7 +51,7 @@ section.card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 5rem 1rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
     width: 300px;
     position: relative;
     display: flex;
@@ -60,11 +60,20 @@ section.card {
 }
 
 .hero-container {
-    position: absolute;
-    top: -25.5%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
 }
 
-.hero-container img {
+.hero-container img:nth-child(1) {
+    position: absolute;
+    width: 250px;
+    bottom: -75px;
+}
+
+.hero-container img:nth-child(2){
+    position: absolute;
     width: 250px;
 }
 
