@@ -26,12 +26,13 @@ Users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/72587880/231344475-fa201720-529d-4347-b262-143e42a73f85.png)
 
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/faq-accordion-card-main)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://earnest-creponne-6a666c.netlify.app/)
 
 ## My process
 
